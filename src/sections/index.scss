@@ -1,3 +1,10 @@
+@import '../common/layot.scss';
+@import '../common/mixin.scss';
+
+$color_bg: #f1ede4;
+
 .main{
     background-color: #fff;
 }
+
+@import '../components/blocks/slider_hero/slider_hero.scss';

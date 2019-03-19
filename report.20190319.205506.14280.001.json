@@ -1,0 +1,1266 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "location": "OnFatalError",
+    "filename": "report.20190319.205506.14280.001.json",
+    "dumpEventTime": "2019/03/19 20:55:06",
+    "processId": "14280",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\web\\I am woman\\node_modules\\.bin\\\\..\\webpack-dev-server\\bin\\webpack-dev-server.js",
+      "--mode",
+      "development",
+      "--open",
+      "--hot",
+      "--inline"
+    ],
+    "nodejsVersion": "v11.8.0",
+    "wordSize": "64 bit",
+    "componentVersions": {
+      "node": "11.8.0",
+      "v8": "7.0.276.38-node.16",
+      "uv": "1.25.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.0j",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0",
+      "arch": "x64",
+      "platform": "win32",
+      "release": "node"
+    },
+    "osVersion": "Windows 10",
+    "machine": "DESKTOP-KQTRR81 "
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    " [pc=00007FF689436B5C] std::basic_ostream<char,std::char_traits<char> >::operator<<+8924",
+    " [pc=00007FF689435C8D] std::basic_ostream<char,std::char_traits<char> >::operator<<+5133",
+    " [pc=00007FF689435662] std::basic_ostream<char,std::char_traits<char> >::operator<<+3554",
+    " [pc=00007FF68952FD9D] uv_loop_fork+82637",
+    " [pc=00007FF6899ECF4E] v8::internal::FatalProcessOutOfMemory+798",
+    " [pc=00007FF6899ECE87] v8::internal::FatalProcessOutOfMemory+599",
+    " [pc=00007FF689CC5C94] v8::internal::Heap::RootIsImmortalImmovable+14788",
+    " [pc=00007FF689CBB8D4] v8::internal::Heap::CollectGarbage+7556",
+    " [pc=00007FF689CB9FA8] v8::internal::Heap::CollectGarbage+1112",
+    " [pc=00007FF689CC3917] v8::internal::Heap::RootIsImmortalImmovable+5703",
+    " [pc=00007FF689CC3996] v8::internal::Heap::RootIsImmortalImmovable+5830",
+    " [pc=00007FF689884871] v8::internal::Factory::NewFillerObject+49",
+    " [pc=00007FF689FDF76A] v8::internal::StoreBuffer::StoreBufferOverflow+26826",
+    " [pc=0000005148950461] "
+  ],
+  "javascriptHeap": {
+    "totalMemory": "1501634560",
+    "totalCommittedMemory": "1501634560",
+    "usedMemory": "1466987528",
+    "availableMemory": "29245424",
+    "memoryLimit": "1526909922",
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": "524288",
+        "committedMemory": "524288",
+        "capacity": "515584",
+        "used": "33520",
+        "available": "482064"
+      },
+      "new_space": {
+        "memorySize": "5242880",
+        "committedMemory": "5242880",
+        "capacity": "2577920",
+        "used": "1522688",
+        "available": "1055232"
+      },
+      "old_space": {
+        "memorySize": "1478168576",
+        "committedMemory": "1478168576",
+        "capacity": "1453563424",
+        "used": "1450733888",
+        "available": "2829536"
+      },
+      "code_space": {
+        "memorySize": "3670016",
+        "committedMemory": "3670016",
+        "capacity": "3051968",
+        "used": "3051968",
+        "available": "0"
+      },
+      "map_space": {
+        "memorySize": "3682304",
+        "committedMemory": "3682304",
+        "capacity": "2707520",
+        "used": "2707520",
+        "available": "0"
+      },
+      "large_object_space": {
+        "memorySize": "10346496",
+        "committedMemory": "10346496",
+        "capacity": "33816536",
+        "used": "8937944",
+        "available": "24878592"
+      },
+      "new_large_object_space": {
+        "memorySize": "0",
+        "committedMemory": "0",
+        "capacity": "0",
+        "used": "0",
+        "available": "0"
+      }
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "1524657650672",
+      "details": ""
+    },
+    {
+      "type": "timer",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "282011561600",
+      "details": "repeat: 0, timeout in: 503 ms"
+    },
+    {
+      "type": "check",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "282011561760",
+      "details": ""
+    },
+    {
+      "type": "idle",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "282011561880",
+      "details": ""
+    },
+    {
+      "type": "prepare",
+      "is_active": "0",
+      "is_referenced": "0",
+      "address": "282011562000",
+      "details": ""
+    },
+    {
+      "type": "check",
+      "is_active": "0",
+      "is_referenced": "0",
+      "address": "282011562120",
+      "details": ""
+    },
+    {
+      "type": "async",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "140696866350656",
+      "details": ""
+    },
+    {
+      "type": "async",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "140696866350432",
+      "details": ""
+    },
+    {
+      "type": "tty",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "1524687766864",
+      "details": "width: 65, height: 10, write queue size: 0, writable"
+    },
+    {
+      "type": "signal",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "1524687534272",
+      "details": "signum: 28"
+    },
+    {
+      "type": "tty",
+      "is_active": "0",
+      "is_referenced": "1",
+      "address": "1524687767376",
+      "details": "width: 65, height: 10, write queue size: 0, writable"
+    },
+    {
+      "type": "signal",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "1524689940688",
+      "details": "signum: 2"
+    },
+    {
+      "type": "signal",
+      "is_active": "1",
+      "is_referenced": "0",
+      "address": "1524689937168",
+      "details": "signum: 15"
+    },
+    {
+      "type": "tcp",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524687286064",
+      "details": "DESKTOP-KQTRR81:3000 (not connected), send buffer size: 65536, recv buffer size: 65536, write queue size: 0"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691795344",
+      "details": "filename: \\\\?\\C:\\web\\I am woman"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524687467808",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-html"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691395216",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-regex"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692233040",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692234144",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692234512",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\lib"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692236352",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\loglevel\\lib"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692235984",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\punycode"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692233408",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692233776",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\sockjs-client\\dist"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692234880",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\strip-ansi"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692235248",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691007616",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691000992",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691004672",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691005776",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\sections\\hero"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691004304",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\sections"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691006144",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\.babelrc"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691007248",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\.eslintrc.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691002096",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\.gitignore"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691003936",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\.stylelintrc.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691006512",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691006880",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\postcss.config.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691002832",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\webpack.config.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691007984",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\yarn.lock"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691005040",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-html\\.npmignore"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691008352",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-html\\LICENSE"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691000624",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-html\\README.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691001360",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-html\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691003200",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-html\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691001728",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-regex\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691002464",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-regex\\license"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691003568",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-regex\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691005408",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\ansi-regex\\readme.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689605632",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\.airtap.yml"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689608944",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\.travis.yml"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689607472",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\History.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689609312",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\LICENSE"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689608576",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\Readme.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689606368",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\events.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689612992",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\events\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689613360",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\LICENSE"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689607840",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\README.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689609680",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689610784",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689612624",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\punycode\\LICENSE-MIT.txt"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689606000",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\punycode\\README.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689608208",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\punycode\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689607104",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\punycode\\punycode.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691394816",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\.travis.yml"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691394080",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\History.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691394448",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\License.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691390032",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\Readme.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691387088",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\decode.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691387456",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\encode.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691393712",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691391504",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\querystring-es3\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691392976",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\strip-ansi\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691393344",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\strip-ansi\\license"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691387824",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\strip-ansi\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691388192",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\strip-ansi\\readme.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691388560",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\.npmignore"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691389664",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\.travis.yml"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691388928",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\.zuul.yml"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691392608",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\LICENSE"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691389296",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\README.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691391136",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691390400",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\test.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691390768",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\url.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691391872",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\url\\util.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691392240",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\sections\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691992816",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\sections\\index.pug"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691991344",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\sections\\index.scss"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691994288",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\lib\\html4-entities.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691994656",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\lib\\html5-entities.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691989872",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\html-entities\\lib\\xml-entities.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691993184",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\loglevel\\lib\\.jshintrc"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691992080",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\loglevel\\lib\\loglevel.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691996496",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\sockjs-client\\dist\\sockjs.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691995024",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\sockjs-client\\dist\\sockjs.js.map"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691991712",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\sockjs-client\\dist\\sockjs.min.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691996128",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\sockjs-client\\dist\\sockjs.min.js.map"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691995392",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\index.bundle.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691995760",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691988768",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\live.bundle.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691990608",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\live.html"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691992448",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\overlay.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691989136",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\socket.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691989504",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\sockjs.bundle.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691993552",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack-dev-server\\client\\webpack.config.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691990240",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin\\amd-define.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691990976",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin\\amd-options.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524691993920",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin\\global.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688895008",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin\\harmony-module.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688891696",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin\\module.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688894640",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\buildin\\system.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688892800",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\dev-server.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688890592",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\emitter.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688892064",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\log-apply-result.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688889120",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\log.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688893168",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\only-dev-server.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688895376",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\poll.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688892432",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\webpack\\hot\\signal.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688890960",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\sections\\hero\\hero.pug"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688889488",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\style-loader\\lib"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688896848",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\style-loader\\lib\\addStyleUrl.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688893536",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\style-loader\\lib\\addStyles.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688896480",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\style-loader\\lib\\urls.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688895744",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\css-loader\\dist\\runtime"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688893904",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\css-loader\\dist\\runtime\\api.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688894272",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\css-loader\\dist\\runtime\\url-escape.js"
+    },
+    {
+      "type": "tcp",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524687286560",
+      "details": "DESKTOP-KQTRR81:3000 connected to DESKTOP-KQTRR81:51152, send buffer size: 65536, recv buffer size: 65536, write queue size: 0, readable, writable"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689610048",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689610416",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\components\\blocks\\slider_hero"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689606736",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\CHANGELOG.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689611152",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\LICENSE"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689611520",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\README.md"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689612256",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\build.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524689611888",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\index.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688896112",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\package.json"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688889856",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\node_modules\\pug-runtime\\wrap.js"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524688891328",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\components\\blocks\\slider_hero\\slider_hero.pug"
+    },
+    {
+      "type": "fs_event",
+      "is_active": "1",
+      "is_referenced": "1",
+      "address": "1524692235616",
+      "details": "filename: \\\\?\\C:\\web\\I am woman\\src\\components\\blocks\\slider_hero\\slider_hero.scss"
+    }
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\web\\I am woman",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Руслан\\AppData\\Roaming",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-KQTRR81",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "HOME": "C:\\Users\\Руслан",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Руслан",
+    "INIT_CWD": "C:\\web\\I am woman",
+    "LANG": "ru_RU.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Руслан\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-KQTRR81",
+    "MSYSTEM": "MINGW64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"start\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_author_email": "ruslanmust87@gmail.com",
+    "npm_config_init_author_name": "Ruslan Mustafin",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.13.0 npm/? node/v11.8.0 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "start",
+    "npm_lifecycle_script": "webpack-dev-server --mode development --open --hot --inline",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_author_email": "ruslanmust87@gmail.com",
+    "npm_package_author_name": "Ruslan Mustafin",
+    "npm_package_dependencies_normalize_css": "^8.0.1",
+    "npm_package_devDependencies_autoprefixer": "^9.4.10",
+    "npm_package_devDependencies_babel_loader": "^8.0.5",
+    "npm_package_devDependencies_clean_webpack_plugin": "^2.0.0",
+    "npm_package_devDependencies_cssnano": "^4.1.10",
+    "npm_package_devDependencies_css_loader": "^2.1.0",
+    "npm_package_devDependencies_eslint": "^5.15.1",
+    "npm_package_devDependencies_eslint_loader": "^2.1.2",
+    "npm_package_devDependencies_file_loader": "^3.0.1",
+    "npm_package_devDependencies_friendly_errors_webpack_plugin": "^1.7.0",
+    "npm_package_devDependencies_html_webpack_plugin": "^3.2.0",
+    "npm_package_devDependencies_mini_css_extract_plugin": "^0.5.0",
+    "npm_package_devDependencies_node_sass": "^4.11.0",
+    "npm_package_devDependencies_postcss_loader": "^3.0.0",
+    "npm_package_devDependencies_postcss_short": "^5.0.0",
+    "npm_package_devDependencies_postcss_utilities": "^0.8.0",
+    "npm_package_devDependencies_pug": "^2.0.0-rc.4",
+    "npm_package_devDependencies_pug_loader": "^2.3.0",
+    "npm_package_devDependencies_sass_loader": "^7.1.0",
+    "npm_package_devDependencies_stylefmt": "^6.0.3",
+    "npm_package_devDependencies_stylefmt_loader": "^1.2.3",
+    "npm_package_devDependencies_stylelint_webpack_plugin": "^0.10.5",
+    "npm_package_devDependencies_style_loader": "^0.23.1",
+    "npm_package_devDependencies_svgo": "^1.2.0",
+    "npm_package_devDependencies_svgo_loader": "^2.2.0",
+    "npm_package_devDependencies_terser_webpack_plugin": "^1.2.3",
+    "npm_package_devDependencies_webpack": "^4.29.6",
+    "npm_package_devDependencies_webpack_cli": "^3.2.3",
+    "npm_package_devDependencies_webpack_dev_server": "^3.2.1",
+    "npm_package_devDependencies_webpack_merge": "^4.2.1",
+    "npm_package_devDependencies_webpack_runtime_analyzer": "^1.5.0",
+    "npm_package_devDependencies__babel_core": "^7.3.4",
+    "npm_package_devDependencies__babel_preset_env": "^7.3.4",
+    "npm_package_license": "MIT",
+    "npm_package_main": "index.js",
+    "npm_package_name": "I_am_woman",
+    "npm_package_scripts_build": "webpack --mode production",
+    "npm_package_scripts_dev": "webpack --mode development",
+    "npm_package_scripts_eslint": "eslint . --cache . --fix",
+    "npm_package_scripts_start": "webpack-dev-server --mode development --open --hot --inline",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "4",
+    "NVM_HOME": "C:\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\Руслан\\OneDrive",
+    "OS": "Windows_NT",
+    "PATH": "C:\\Users\\27C6~1\\AppData\\Local\\Temp\\yarn--1553008657421-0.19177439214814562;C:\\web\\I am woman\\node_modules\\.bin;C:\\Users\\Руслан\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\web\\I am woman\\node_modules\\.bin;C:\\Users\\Руслан\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\Руслан\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\nvm;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\Руслан\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Руслан\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Руслан\\AppData\\Local\\Yarn\\bin;C:\\Users\\Руслан\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2a07",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "/c/web/I am woman",
+    "SHLVL": "2",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\27C6~1\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.32.3",
+    "TMP": "C:\\Users\\27C6~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-KQTRR81",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-KQTRR81",
+    "USERNAME": "Руслан",
+    "USERPROFILE": "C:\\Users\\Руслан",
+    "WINDIR": "C:\\Windows",
+    "YARN_WRAP_OUTPUT": "false",
+    "_": "/usr/bin/winpty",
+    "__COMPAT_LAYER": "RunAsAdmin Installer"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\SYSTEM32\\apphelp.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\SYSTEM32\\NETAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\SYSTEM32\\NETUTILS.DLL",
+    "C:\\Windows\\SYSTEM32\\SRVCLI.DLL",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\system32\\DriverStore\\FileRepository\\nvsmwu.inf_amd64_40e2f893a8ddfad8\\nvinitx.dll",
+    "C:\\Windows\\SYSTEM32\\VERSION.dll",
+    "C:\\Windows\\System32\\Shell32.dll",
+    "C:\\Windows\\System32\\shcore.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\windows.storage.dll",
+    "C:\\Windows\\System32\\shlwapi.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\FLTLIB.DLL",
+    "C:\\Program Files\\NVIDIA Corporation\\CoProcManager\\_etoured.dll",
+    "C:\\Program Files\\NVIDIA Corporation\\CoProcManager\\nvd3d9wrapx.dll",
+    "C:\\Windows\\System32\\SETUPAPI.dll",
+    "C:\\Program Files\\NVIDIA Corporation\\CoProcManager\\nvdxgiwrapx.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTSP.dll",
+    "C:\\Windows\\system32\\rsaenh.dll",
+    "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\web\\I am woman\\node_modules\\node-sass\\vendor\\win32-x64-67\\binding.node"
+  ]
+}

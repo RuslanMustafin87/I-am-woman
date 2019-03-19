@@ -45,6 +45,7 @@
     "webpack-runtime-analyzer": "^1.5.0"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swipejs": "^2.2.14"
   }
 }

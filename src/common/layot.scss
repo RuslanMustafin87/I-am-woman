@@ -1,3 +1,5 @@
+@import '../common/mixin.scss';
+
 html,body,ul,p,h1,h2,h3,h4,h5,h6,blockquote {
     margin: 0;
     padding: 0;
@@ -44,7 +46,7 @@ a {
 }
 
 html {
-  @include desktop{
+  @include desktop(){
     font-size: 15px;
   }
   @include tablet(){

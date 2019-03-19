@@ -1,5 +1,7 @@
 .slider
     ul.slider__container
-        li.slider__content-slid
-        li.slider__content-slid
-        li.slider__content-slid
+        - var n = 0;
+        while n < 3
+            - n++
+            li.slider__content-slid
+                .slider__pic
