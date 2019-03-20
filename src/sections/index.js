@@ -1,7 +1,5 @@
 import './index.scss';
 
-// const sliderContainer = document.querySelector('.slider__container');
+import sliderHero from '../components/blocks/slider_hero/slider_hero';
 
-// sliderContainer.addEventListener('swipe', (event)=>{
-// 	console.log(event.screenX);
-// });
+sliderHero();

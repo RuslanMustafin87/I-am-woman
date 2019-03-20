@@ -1,12 +1,14 @@
 .slider{
     size: 100%;
     position: relative;
+    cursor: pointer;
 }
 
 .slider__container{
     position: absolute;
     top:0;
     left: 0;
+    transition: left .3s linear;
     // transform: translateX(-66.6666%);
     size: 300% 100%;
     @util clearfix;
@@ -41,5 +43,5 @@
 }
 
 .slider__pic{
-    
+
 }

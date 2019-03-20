@@ -1,7 +1,8 @@
-.slider
-    ul.slider__container
-        - var n = 0;
-        while n < 3
-            - n++
-            li.slider__content-slid
-                .slider__pic
+.slider.swipe#slider
+    ul.slider__container.swipe-wrap#slider__container
+        li.slider__content-slid.active__slide
+            .slider__pic
+        li.slider__content-slid
+            .slider__pic
+        li.slider__content-slid
+            .slider__pic
